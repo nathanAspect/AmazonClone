@@ -1,0 +1,178 @@
+body{
+   padding: 0;
+   margin: 0;
+   font-family: Roboto, Arial;
+   height: 1000px;
+}
+header{
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   height: 60px;
+   background-color: rgb(19, 25, 33);
+   display: flex;
+   padding: 0 15px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+
+.left{
+   width: 180px;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   flex-shrink: 0;
+}
+.middle{
+   flex: 1;
+   max-width: 850px;
+   margin: 0 10px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 0 10px;
+   width: 0;
+}
+.right{
+   display: flex;
+   justify-content: flex-end;
+   width: 180px;
+   flex-shrink: 0;
+}
+
+
+
+
+.smallLogo{
+   display: none;
+   margin-top: 5px;
+   height: 35px;
+}
+.left a{
+   padding: 6px;
+   border: 1px solid rgb(19, 25, 33);
+}
+.bigLogo{
+   display: flex;
+   margin-top: 5px;
+   width: 100px;
+}
+
+
+
+.middle input{
+   height: 38px;
+   padding: 1px 2px 1px 15px;
+   border: none;
+   border-radius: 4px 0 0 4px;
+   flex: 1;
+   font-size: 16px;
+   width: 0;
+   outline: none
+}
+.middle input:focus{
+   outline: 2px solid rgb(240, 136, 4);
+}
+.middle button{
+   width: 45px;
+   height: 40px;
+   padding: 1px 6px;
+   border: none;
+   border-radius: 0 4px 4px 0;
+   background-color: rgb(254, 189, 105);
+   cursor: pointer;
+}
+.middle img{
+   width: 22px;
+}
+
+
+
+.orders{
+   display: flex;
+   flex-direction: column;
+   align-content: flex-start;
+   text-decoration: none;
+   padding: 6px;
+}
+.orders span{
+   margin: 0;
+   padding: 0;
+   color: white;
+   font-size: 13px;
+   display: flex;
+}
+.orders p{
+   margin: 0;
+   padding: 0;
+   color: white;
+   font-size: 15px;
+   font-weight: 500;
+   display: flex;
+}
+.cart{
+   padding: 6px;
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+.cart img{
+   width: 50px;
+}
+.crt{
+   margin: 15px 0 0 0;
+   color: white;
+   font-size: 15px;
+   font-weight: 500;
+}
+.count{
+   position: absolute;
+   top:0;
+   right: 12px;
+   padding: 0;
+   margin: 0;
+   color: rgb(240, 136, 4);
+   font-size: 16px;
+   font-weight: 500;
+}
+.cart div{
+   position: relative;
+}
+.humburger{
+   padding: 6px;
+   width: 24px;
+   display: none;
+}
+.humburger img{
+   width: 18px;
+}
+
+
+@media screen and (max-width: 575px) {
+   .humburger{
+      display: flex;
+   }
+   .cart{
+      display: none;
+   }
+   .orders{
+      display: none;
+   }
+   .bigLogo{
+      display: none;
+   }
+   .smallLogo{
+      display: flex;
+   }
+   .left{
+      width: auto;
+   }
+   .right{
+      width: auto;
+   }
+}
