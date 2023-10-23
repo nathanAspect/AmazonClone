@@ -18,6 +18,7 @@ main{
    justify-content: center;
    object-fit: contain;
    margin: 20px;
+   overflow: hidden;
 }
 .productPic img{
    width: 80%;
@@ -126,4 +127,37 @@ main{
 }
 .optionBtn button:active{
    outline: 2px solid rgb(240, 136, 4);
+}
+
+
+
+
+@media screen and (max-width: 1230px){
+   main{
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 1080px){
+   main{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 800px){
+   main{
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 575px){
+   main{
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 400px){
+   main{
+      grid-template-columns: 1fr;
+   }
 }
